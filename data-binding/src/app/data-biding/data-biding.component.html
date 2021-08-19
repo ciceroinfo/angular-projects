@@ -1,0 +1,32 @@
+<section>
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>url {{ url }}</p>
+        <p>Quanto é 1 + 1: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+        <p>Resultado booleano: {{ cursoAngular && getCurtir() }}</p>
+    </article>
+    <article>
+        <h3>Property Biding</h3>
+        <img src="{{ urlImagem }}">
+        <img [src]="urlImagem">
+        <img bind-src="urlImagem">
+    </article>
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change) = "0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Alerta'</option>
+                <option value="alert-danger">Erro</option>
+            </select>
+            <br><br>
+            <div class="alert alert-success" type="alert">...</div>
+            <alert type="info">
+                <strong>Heads up!</strong> Info
+             </alert>
+        </div>
+    </article>
+</section>
